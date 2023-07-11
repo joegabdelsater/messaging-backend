@@ -1,0 +1,30 @@
+{
+    "name": "joegabdelsater/messaging-backend",
+    "description": "This package is a plug and play package for a simple messaging backend",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Joe Abdel Sater",
+            "email": "joegabdelsater@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Joegabdelsater\\MessagingBackend\\": "src/"
+        }
+    },
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Joegabdelsater\\MessagingBackend\\MessagingBackendServiceProvider"
+            ],
+            "aliases": {
+                "MessagingBackend": "Joegabdelsater\\MessagingBackend\\Facades\\MessagingBackend"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
