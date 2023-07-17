@@ -22,8 +22,7 @@ class MessagingBackendServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this->loadMigrationsFrom([
-            __DIR__.'/Migrations/2023_05_05_084354_create_chats_table.php',
-            __DIR__.'/Migrations/2023_05_05_084355_create_chat_messages_table.php',
+            __DIR__.'/Migrations/'
         ]);
 
         $this->publishes([
