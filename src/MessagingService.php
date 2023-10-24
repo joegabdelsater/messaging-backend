@@ -59,7 +59,7 @@ class MessagingService
             'sender_id' => $sender_id,
         ]);
 
-        return self::getById($chat_id);
+        return self::getById($chat_id, $sender_id);
     }
 
     public static function createMessageByUserIds($professional_id, $user_id, $sender_id, $message)
